@@ -1,0 +1,102 @@
+.ui-list {
+    background-color: #fff;
+    width: 100%;
+    &.no-padding li{
+        padding: 0;
+    }
+    >li{
+        position: relative;
+        display: -webkit-box;
+        padding: $wrap-padding;
+    }
+}
+
+.ui-list-pure >li{
+    display: block;
+}
+
+//附加样式
+.ui-list-border-b >li{
+    @include ui-border-b;
+}
+
+.ui-list-noBottom >li{
+    &:nth-last-child(1){
+        border-bottom: 0;
+    }
+}
+
+//左右
+.ui-list-lr >li{
+    .ui-list-txt{
+        flex:2;
+    }
+    .ui-list-pic{
+        flex: 1;
+        img {
+            @include ui-img;
+        }
+    }
+}
+.ui-list-horizon{
+    display: flex;
+    > li {
+        float: left;
+        flex: 1;
+    }
+}
+
+    //水平垂直居中
+    .ui-list-center >li {
+        @extend .ui-center;
+    }
+
+    //带右箭头
+    .ui-list-link >li:after {
+        @extend .ui-arrow-r;
+    }
+
+    //上下结构 业务关联较多
+    .ui-list-flex >li {
+        .flex {
+            padding-top: $wrap-padding-s;
+            display:flex;
+            >div{
+                flex: 1;
+                color: $grey9;
+            }
+            img {
+                @include ui-img;
+            }
+        }
+    }
+
+    .ui-list-new >li,
+    .ui-list-flex >li{
+        display: flex;
+        flex-direction:column;
+        //display: -webkit-box;
+        //-webkit-box-orient: vertical;
+        .tap-hold {
+            width: 100%;
+            box-sizing: border-box;
+            display: block;
+        }
+        h3{
+            color: #000;
+            margin-bottom: $wrap-padding-s;
+        }
+
+        .no-padding{
+            padding: 0;
+        }
+        .ui-list-new-info{
+            color: $grey6;
+            padding-top: $wrap-padding-s;
+        }
+    }
+
+
+
+
+

@@ -1,0 +1,233 @@
+//抽取公共的颜色值
+.color-red{
+    color:$bRed;
+}
+.color-orange{
+    color:$bOrange;
+}
+.color-grey9{
+    color: $grey9;
+}
+.color-grey6{
+    color: $grey6;
+}
+
+//抽取的背景颜色
+.ui-bg-purple {
+    background-color: $purple;
+}
+.ui-bg-white {
+    background-color: #fff;
+}
+
+
+.ui-circle {
+    border-radius: 100%;
+    width: $common-width-s;
+    height: $common-width-s;
+    text-align: center;
+    background-color: $fRed;
+}
+
+.ui-circle-s {
+    width: $circle-width-s;
+    height: $circle-width-s;
+}
+
+/*.ui-arrow-r {
+    @include ui-arrow-r;
+}*/
+/*--------------padding---------------*/
+.ui-padding {
+    padding: $wrap-padding;
+}
+.ui-padding-tb{
+    padding: $wrap-padding 0;
+}
+.ui-padding-lr{
+    padding: 0 $wrap-padding;
+}
+
+.ui-padding-s {
+    padding: $wrap-padding-s;
+}
+.ui-padding-s-tb{
+    padding: $wrap-padding-s 0;
+}
+.ui-padding-s-lr{
+    padding: 0 $wrap-padding-s;
+}
+
+/*宽高*/
+.ui-list-height  >li{
+    height: $common-width-s/2;
+}
+
+.ui-common-width-s {
+    width: $common-width-s;
+}
+.ui-common-width {
+    width: $common-width;
+}
+
+//单行省略号
+.single-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+//多行省略号
+.ui-text-twoLine {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    padding: 0;
+    word-break: break-all;
+    /*white-space: nowrap;*/
+}
+
+
+
+.ui-text-right {
+    text-align: right;
+}
+
+.ui-text-center {
+    text-align: center;
+}
+
+/*.ui-text-common {
+    color: $fGrey2;
+}*/
+
+.info-margin {
+    margin-top: 58px;
+}
+
+//border
+.ui-border-tb{
+    @include ui-border-tb;
+}
+.ui-border-r{
+    @include ui-border-r;
+}
+.ui-border-l{
+    @include ui-border-l;
+}
+.ui-border-b{
+    @include ui-border-b;
+}
+
+/*--------------------标签-------------------*/
+.gf-tag {
+    @include gf-tag;
+    vertical-align: 2px;
+    margin: 0 2px;
+}
+.tag-yin {
+    background-color: $red;
+}
+//投顾标志
+.tag-tgu {
+    background-color: $cBlue;
+}
+.tag-num{
+    @include gf-tag($red2,10px,1px,5px);
+}
+//空星
+.icon-star1 {
+    @include sprite($icon-star1);
+}
+.icon-star2 {
+    @include sprite($icon-star2);
+}
+.icon-star1,
+.icon-star2 {
+    display: inline-block;
+    //padding-bottom: 1px;
+    padding-right: 1px;
+    margin-right: 2px;
+    height: 12px;
+    vertical-align: -2px;
+}
+/*------------------红点-------------------*/
+.gf-reddot {
+    display: inline-block;
+    position: relative;
+    //padding: 0 5px;
+    &:after{
+        display: block;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-clip: padding-box;
+        background-color: #cf2a2a;
+        content: '';
+    }
+}
+
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+
+
+.icon-padding-b{
+    padding-bottom: $wrap-padding-s/2;
+}
+/*----------字体大小-font-size-------------*/
+
+.font11{
+    font-size:11px;
+}
+.font12{
+    font-size:$fSize0;
+}
+.font13{
+    font-size:$fSize1;
+}
+.font14 {
+    font-size:$fSize4;
+}
+.font16 {
+    font-size:$fSize3;
+}
+
+
+/*----------字体颜色font color-------------*/
+.grey6{
+    color: $grey6;
+}
+.grey9{
+    color: $grey9;
+}
+.red5{
+    color:#ec5f2a;
+}
+
+/*-----------通用图形-----------*/
+.ui-arrow-r{
+    @include sprite($icon-arr-right);
+    background-image: url('../assets/images/sprite.png');
+    position:absolute;
+    right: $wrap-margin;
+    top: 50%;
+    width: 12px;
+    height: 20px;
+    margin-top: -10px;
+    margin-right: -5px;
+    content:'';
+    @media (max-width: 320px) {
+        right: $wrap-margin-s;
+    }
+}
+
+
+

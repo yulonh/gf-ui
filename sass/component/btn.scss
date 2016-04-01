@@ -1,0 +1,230 @@
+.ui-btn {
+    @include ui-border($blue);
+    display: inline-block;
+    position:  absolute;
+    top:50%;
+    margin-top: -12px;
+    padding:0;
+    right: 15px;
+    width: 50px;
+    height: 23px;
+
+    //line-height: 25px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: $blue;
+    background-color: #fff;
+    font-size: $fs8;
+    text-align: center;
+    cursor: pointer;
+
+    &:before{
+        @include ui-border($blue);
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        //padding: 1px;
+        pointer-events: none;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        border-radius: 4px;
+        content: '';
+    }
+    &.active {
+        color: $grey9;
+        &:before {
+            @include ui-border($grey9);
+        }
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 2){
+        border: 0;
+    }
+
+}
+
+
+
+/*===================新标准=======================*/
+.gf-btn{
+    display: inline-block;
+    position:  relative;
+    box-sizing: border-box;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.gf-btn-s-second,.gf-btn-second,.gf-btn-full-second {
+
+    border: 1px solid $fBlue;
+    border-radius: 4px;
+    //top:50%;
+    //margin-top: -12px;
+    //right: 15px;
+    width: 1.05rem;
+    height: .35rem;
+
+    color: $fBlue;
+    background-color: #fff;
+    font-size: .14rem;
+
+
+    &:before{
+        border: 1px solid $fBlue;
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        //padding: 1px;
+        pointer-events: none;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        border-radius: 4px;
+        content: '';
+    }
+    &:active,&.active{
+        background-color: #cfe6fa;
+    }
+    &:disabled,&.disabled {
+        @include ui-border(#ccc);
+        color: #ccc;
+        background-color: $bGrey;
+        &:before {
+            @include ui-border(#ccc);
+        }
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 2){
+        border: 0;
+    }
+}
+.gf-btn-s-main,.gf-btn-main,.gf-btn-full-main {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 4px;
+    position:  relative;
+    padding: 0;
+    width: 1.05rem;
+    height: .35rem;
+
+    color: #fff;
+    background-color: $fBlue;
+    font-size: .14rem;
+    text-align: center;
+    cursor: pointer;
+
+    &:active,&.active{
+        background-color: #004a89;
+    }
+    &:disabled,&.disabled {
+        color: #749bcc;
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 2){
+        border: 0;
+    }
+}
+
+.gf-btn-s-danger,.gf-btn-danger,.gf-btn-full-danger {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 4px;
+    position:  relative;
+    padding: 0;
+    width: 1.05rem;
+    height: .35rem;
+
+    color: #fff;
+    background-color: $gred;
+    font-size: .14rem;
+    text-align: center;
+    cursor: pointer;
+
+    &:active,&.active{
+        background-color: #b73713;
+    }
+    &:disabled,&.disabled {
+        color: #e89688;
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 2){
+        border: 0;
+    }
+}
+
+.gf-btn-second,.gf-btn-main,.gf-btn-danger {
+    width: 92%;
+    height: .45rem;
+    font-size: .18rem;
+}
+
+.gf-btn-full-second {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: .45rem;
+    font-size: .18rem;
+    border-radius: 0;
+    //position: fixed;
+    &:before,&:active,&.active{
+        border: 1px solid #ccc;
+    }
+}
+.gf-btn-full-main,.gf-btn-full-danger {
+    border: 0;
+    border-radius: 0;
+    width: 100%;
+    height: .45rem;
+    font-size: .18rem;
+    &:before,&:active,&.active{
+        border: 0;
+    }
+}
+
+.gf-btn-full-main:disabled{
+    color: #ccc;
+    background-color: $bGrey;
+}
+
+.gf-btn-group {
+    box-sizing: border-box;
+    border-radius: 0;
+    padding: 0;
+    width: 100%;
+    height: .45rem;
+    font-size: .18rem;
+
+    .main{
+        float: right;
+        padding: 0;
+        width: 60%;
+        height: .45rem;
+        color: #fff;
+        background-color: $fBlue;
+        text-align: center;
+        cursor: pointer;
+        &:active,&.active{
+            background-color: #004a89;
+        }
+        &:disabled,&.disabled {
+            color: #749bcc;
+        }
+    }
+    .second {
+        float: left;
+        border: 1px solid #ccc;
+        padding: 0;
+        width: 40%;
+        height: .45rem;
+        color: $fBlue;
+        background-color: #fff;
+        text-align: center;
+        cursor: pointer;
+        &:active,&.active{
+            background-color: #cfe6fa;
+        }
+        &:disabled,&.disabled {
+            color: #ccc;
+            background-color: $bGrey;
+        }
+    }
+}
+

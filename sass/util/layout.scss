@@ -1,0 +1,70 @@
+.ui-flex{
+    display: -webkit-box;
+    min-width: 100px;
+    box-sizing: border-box;
+}
+.ui-flex-ver{
+    -webkit-box-orient: vertical;
+}
+.ui-flex-pack-start {
+    -webkit-box-pack: start;
+}
+.ui-flex-pack-end {
+    -webkit-box-pack: end;
+}
+.ui-flex-pack-center {
+    -webkit-box-pack: center;
+}
+.ui-flex-align-start {
+    -webkit-box-align: start;
+}
+.ui-flex-align-end {
+    -webkit-box-align: end;
+}
+.ui-flex-align-center {
+    -webkit-box-align: center;
+}
+
+/*----------------百分比布局percentage-------------------*/
+.ui-col{
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+}
+.ui-col-50{
+    width: 50%;
+}
+.ui-col-25{
+    width: 25%;
+}
+.ui-col-75{
+     width: 75%;
+ }
+
+.ui-row-67{
+    height: 67%;
+}
+.ui-row-33{
+    height: 33%;
+}
+.ui-center{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    //width: 100%;
+
+    text-align: center;
+}
+
+.ui-header,
+.ui-footer{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.ui-footer{
+    bottom: 0;
+}

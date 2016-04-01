@@ -1,0 +1,68 @@
+/*-------------底部的menu组件-----------------*/
+.ui-flex-tabs-container {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f6f6f6;
+    color: $grey6;
+    align-items: center;
+    @include ui-border-t($bGrey1);
+    border-top: 1px #d2d2d2 solid;
+    z-index: $z-index-icon-top;
+    .icon {
+        margin: 0 auto 3px;
+    }
+    .ui-flex-tabs-item {
+        flex: 1;
+        text-align: center;
+        padding:7px 0;
+        font-size: 11px;
+    }
+
+    .icon-home {
+        @include sprite($icon-home);
+    }
+
+    .icon-news {
+        @include sprite($icon-news);
+    }
+
+    .icon-groups {
+        @include sprite($icon-groups);
+    }
+
+    .icon-shops {
+        @include sprite($icon-shops);
+    }
+
+    .home-active {
+        color: #0061b3;
+        i {
+            @include sprite($icon-home-active);
+        }
+    }
+    .news-active {
+        color: #0061b3;
+        i {
+            @include sprite($icon-news-active);
+        }
+    }
+    .groups-active {
+        color: #0061b3;
+        i {
+            @include sprite($icon-groups-active);
+        }
+    }
+    .shops-active {
+        color: #0061b3;
+        i {
+            @include sprite($icon-shops-active);
+        }
+    }
+    .icon-size{
+        width:23px! important;
+        height:23px! important;
+    }
+}

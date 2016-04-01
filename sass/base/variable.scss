@@ -1,0 +1,200 @@
+$grey: #eeeff6;
+$lightGrey: #e9e9e9;
+$grey3: #333;
+$grey6: #666;
+$grey9: #999;
+$bGrey: #eaeaea;
+$bGrey1: #d2d2d2;
+$menuGrey:#f0f0f0;
+$grey4:#efefef;
+$grey5:#ddd;
+$grey7:#e0e0e0;
+
+$white: #fff;
+$blue: #217de4;
+
+$cBlue:#4aa7f5;
+
+$bRed: #e54647;
+$fRed: #f26d6e;
+
+
+
+
+$purple: #728fe4;
+$bOrange: #ffb84c;
+$cYellow:#f3e1a1;//免责声明外框
+$lightYellow:#fefbea;//免责声明背景
+
+
+$heavyBlack: rgba(0, 0, 0, 0.9);
+
+$fSize5: 11px;  // 11px
+$fSize0: 12px;  // 12px
+$fSize1: 13px; // 13px
+$fSize4: 14px;  // 14px
+$fSize2: 15px; // 15px
+$fSize3: 16px;  // 16px
+$fSize6: 18px;  // 18px
+
+//-----------Margin-----------------//
+$wrap-margin:      15px;
+$wrap-margin-s:    10px;
+//-----------Paddings-----------------//
+$wrap-padding:      .15rem;
+$wrap-padding-s:    .07rem;
+//-----------Z-indexes----------------//
+$z-index-mask:        1;
+$z-index-banner-bar:  9;
+$z-index-banner:     20;
+$z-index-checkBox:   30;
+$z-index-icon-top:   99;
+$z-index-guideMask: 999;
+$z-index-guideCnt: 9999;
+//=----------Widths-------------------//
+$circle-width-s:    80px;
+$circle-width:      90px;
+$common-width-s:    100px;
+$common-width:      150px;
+
+
+
+
+$borderDirection: top !default;
+//固定样式，可选方向的外框
+.border-#{$borderDirection}{
+    border-#{$borderDirection}:1px solid $bGrey;
+}
+
+
+//ui库 文字
+/*------------颜色--------------*/
+$gred: #dd5839;
+$gblue2: #004a89;
+$fBlue: #0061b3;
+$green: #72973c;
+$red: #e55454;
+$red2: #cf2a2a; //tag数字角标
+$grey8: #f2f2f2;
+$grey0: #ddd;
+
+/*字体大小*/
+$fs0: .23rem;
+//$fs1: .19rem;
+
+$fs2: .18rem; //尾数相加为10
+//$fs3: .17rem;
+$fs4: .16rem;
+//$fs5: .15rem;
+$fs6: .14rem;
+$fs8: .12rem;
+$fs9: .11rem;
+
+/*资讯文章大标题*/
+.gf-font-big-title{
+    font-size:$fs0; //23px
+    font-weight: bold;
+    color: #000;
+}
+/*资讯内容*/
+.gf-font-big-content{
+    font-size:$fs2; //18px
+    color: $grey3;
+}
+/*资讯辅助*/
+.gf-font-big-assist{
+    font-size:$fs4; //16px
+    color: $grey9;
+}
+/*反字标题  适用范围太窄，考虑删除*/
+//.gf-font-reverse-title{
+//    font-size:$fs2; //18px
+//    color: #fff;
+//}
+
+/*TAB标题*/
+.gf-font-tab-title{
+    font-size:$fs4; //16px
+    color: $grey6;
+}
+/*模块标题*/
+.gf-font-module-title{
+    font-size:$fs6; //14px
+    color: $grey6;
+}
+/*标题文字*/
+.gf-font-mid-title{
+    font-size:$fs2; //18px
+    color: #000;
+}
+/*辅助文字*/
+.gf-font-mid-assist{
+    font-size:$fs6; //14px
+    color: $grey9;
+}
+/*底部导航 带图片的tab标题*/
+.gf-font-img-title{
+    font-size:$fs8; //12px
+    color: $grey6;
+}
+
+/*表格 列表标题*/
+.gf-font-small-title{
+    font-size:$fs4; //16px
+    color: $grey3;
+}
+/*表格 列表名称*/
+.gf-font-small-name{
+    font-size:$fs4; //16px
+    color: $grey6;
+}
+/*表格 列表正文*/
+.gf-font-small-content{
+    font-size:$fs4; //16px
+    color: #000;
+}
+/*表格 列表辅助*/
+.gf-font-small-assist{
+    font-size:$fs8; //12px
+    color: $grey9;
+}
+/*重要文字*/
+.gf-font-danger{
+    font-size:$fs4; //16px
+    color: $red;
+}
+/*重要中等文字*/
+.gf-font-mid-danger{
+    font-size:$fs6; //14px
+    color: $red;
+}
+/*失败提示*/
+.gf-font-fail{
+    font-size:$fs0; //23px
+    color: $red;
+}
+/*成功提示*/
+.gf-font-success{
+    font-size: $fs0; //23px
+    color: $green;
+}
+/*输入文字*/
+.gf-font-input{
+    font-size:$fs4; //16px
+    color: #cccccc;
+}
+/*链接文字*/
+.gf-font-link{
+    font-size:$fs4; //16px
+    color: $fBlue;
+    &:visited{
+        color: $purple;
+    }
+    &:hover{
+        color: $red;
+    }
+}
+
+
+
+
