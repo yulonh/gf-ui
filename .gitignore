@@ -6,4 +6,3 @@ src/app/.idea/
 .idea/
 /bower_components/
 /node_modules/
-/dist/
