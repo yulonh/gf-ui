@@ -229,5 +229,16 @@
     }
 }
 
-
+/*向下的三角*/
+.ui-triangle-down{
+    content: "";
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-top: 0.08rem solid #666;
+    border-left: 0.06rem solid transparent;
+    border-right: 0.06rem solid transparent;
+    border-bottom: 0;
+    margin-left: 0.05rem;
+}
 
